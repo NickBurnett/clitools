@@ -2,8 +2,8 @@ echo 'Beginning pypass installation...'
 cd ~ || exit
 mkdir '.install_passgen_temp'
 cd '.install_passgen_temp' || exit
-curl -o passgen.py localhost:3000/clitools/python/passgen.py
-curl -o passgen.sh localhost:3000/clitools/bash/passgen.sh
+curl -o passgen.py 192.168.1.92:3000/clitools/python/passgen.py
+curl -o passgen.sh 192.168.1.92:3000/clitools/bash/passgen.sh
 mkdir '../.cli_installs'
 mkdir '../.cli_installs/python'
 mv './passgen.py' '../.cli_installs/python/passgen.py'
